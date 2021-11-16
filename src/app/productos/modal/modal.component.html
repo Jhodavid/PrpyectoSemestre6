@@ -1,0 +1,27 @@
+<div class="cerrar" mat-dialog-actions>
+    <button mat-button mat-dialog-close color="warnnig">Cerrar</button>
+</div>
+<div class="contenedor" mat-dialog-content>
+    <h1 mat-dialog-title>
+        {{producto.nombre}}
+    </h1>
+    <div class="img">
+        <img src="{{producto.img}}">
+    </div>
+    <div class="texto">
+        <h2>Descripción:</h2>
+        <p>
+            {{producto.texto}}
+        </p>
+    </div>
+    <div *ngIf="mostrarIntrucciones" class="texto">
+        <h2>Instrucciones:</h2>
+        <p>
+            {{producto.instrucciones}}
+        </p>
+    </div>
+</div>
+    
+
+
+

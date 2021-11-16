@@ -1,0 +1,29 @@
+<div class="tituloProductos">
+  <strong *ngIf="!modoCelular" class="T1">Nuestros Productos</strong><br>
+  <strong *ngIf="!modoCelular" class="T2">Exclusivos y eco-friendly</strong>
+  <strong *ngIf="modoCelular" class="T1Phone">Nuestros Productos</strong><br>
+  <strong *ngIf="modoCelular" class="T2Phone">Exclusivos y eco-friendly</strong>
+</div>
+
+<mat-grid-list cols="{{gridColums}}" rowHeight="{{gridRows}}">
+
+        <table>
+            <tr *ngFor="let producto of listaProductos">
+                <mat-grid-tile>
+                  <mat-card class="example-card" fxLayoutAlign="start start">
+                      <mat-card-header>
+                          <mat-card-title>{{producto.nombre}}</mat-card-title>
+                      </mat-card-header>
+                      <div class="img">
+                          <img mat-card-image src="{{producto.img}}">
+                      </div>
+                      <mat-card-actions>
+                          <button (click)="openDialog(producto.nombre, producto.instrucciones, producto.texto, producto.img)" mat-flat-button>SABER MÁS</button>
+                          <a target="_blank" href="https://api.whatsapp.com/send?phone=3046251261&text=Hola%20Erco%20Tents,%20estoy%20interesad@%20en%20uno%20de%20sus%20productos!%20({{producto.nombre}})"><button mat-flat-button>COMPRAR</button></a>
+                      </mat-card-actions>
+                  </mat-card>
+                </mat-grid-tile>
+            </tr>
+        </table>
+
+  </mat-grid-list>

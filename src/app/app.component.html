@@ -1,0 +1,40 @@
+<mat-toolbar>
+    <mat-toolbar-row>
+      <div class="logo" [routerLink]="['/inicio']">
+        <img src=".\assets\icono.png">
+        <span style="font-size: 28px;">Erco Tents</span>
+      </div>
+      <button *ngIf="modoCelular" (click)="drawer.toggle()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span class="example-spacer"></span>
+      <div class="redes">
+        <a target="_blank" href="https://www.facebook.com/COPST-Tienda-ecológica-107332411770972">
+        <img class="imgRedes" src=".\assets\facebook.png">
+        </a>
+        <a target="_blank" href="https://www.instagram.com/joh.code/">
+          <img class="imgRedes" src=".\assets\instagram.png">
+        </a>
+      </div>
+      <div *ngIf="!modoCelular" class="cajaBotones">
+          <button mat-stroked-button color="primary" [routerLink]="['/inicio']">Inicio</button>
+          <button mat-stroked-button color="primary" [routerLink]="['/proposito']">Nuestro Propósito</button>
+          <button mat-stroked-button color="primary" [routerLink]="['/productos']">Productos</button>
+      </div>
+      
+    </mat-toolbar-row>
+</mat-toolbar>
+
+
+<mat-drawer-container class="navbar">
+    <mat-drawer #drawer (mode)="modoNav">
+      <button (click)="drawer.toggle()" mat-raised-button>X</button>
+        <div class="cajaNavbarPhone">
+          <button mat-stroked-button color="primary" (click)="drawer.toggle()" [routerLink]="['/inicio']">Inicio</button>
+          <button mat-stroked-button color="primary" (click)="drawer.toggle()" [routerLink]="['/proposito']">Nuestro Propósito</button>
+          <button mat-stroked-button color="primary" (click)="drawer.toggle()" [routerLink]="['/productos']">Productos</button>
+        </div>
+    </mat-drawer>
+
+    <router-outlet></router-outlet>
+</mat-drawer-container>

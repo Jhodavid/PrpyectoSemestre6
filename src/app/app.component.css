@@ -1,0 +1,107 @@
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+mat-toolbar{
+    background-color: rgba(8, 121, 8, 0.486);
+    padding: 10px;
+}
+
+mat-toolbar-row{
+  padding: 0;
+}
+
+.navbar {
+    height: 87.2vh;
+    background-color: rgba(224, 255, 228, 0.445);
+  }
+
+  
+.logo{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+.redes{
+    display: flex;
+    align-items: flex-end;
+    margin: 15px 5px 5px 5px;
+}
+
+.imgRedes{
+  cursor: pointer;
+  margin-left: 5px;
+  padding: 6px;
+  background-color: #f8f8f8;
+  border-radius: 15px;
+  width: 30px;
+}
+
+ mat-drawer {
+   display: flex;
+   align-items: center;
+   text-align: center;
+   background-color: rgba(12, 110, 25, 0.103);
+   position: fixed;
+   width: 72%;
+   height: 100%;
+ }
+
+ .cajaNavbarPhone{
+  width: 70%;
+  margin: 30% 13% 13% 13%;
+  padding: 5%;
+  background-color: rgba(0, 255, 179, 0.068);
+  border-radius: 10px;
+}
+
+.cajaNavbarPhone button{
+  background-color: #87be87;
+  width: 88%;
+  margin: 2%;
+  color: #fff;
+  border-radius: 10px;
+
+}
+
+ .mat-raised-button{
+   background-color: rgba(10, 107, 10, 0.548);
+   float: right;
+   margin: 5px;
+ }
+
+
+  
+.cajaNavbar{
+  width: 70%;
+  margin: 30% 15% 15% 15%;
+  background-color: rgba(0, 195, 255, 0.171);
+}
+
+.cajaBotones{
+  margin: 5px;
+}
+
+.cajaBotones button{
+  border-radius: 25px;
+  color: #fff;
+  font-size: 20px;
+  margin: 5px;
+}
+
+.cajaBotones button:hover{
+  border-radius: 25px;
+  color: rgb(10, 107, 10);
+  background-color: rgba(255, 255, 255, 0.89);
+  font-size: 20px;
+  margin: 5px;
+  transition: .3s;
+}
+
+mat-drawer-container{
+  margin: 0;
+  padding: 0;
+}

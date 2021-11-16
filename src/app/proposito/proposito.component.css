@@ -1,0 +1,50 @@
+@font-face {
+    font-family: Zing-Rust-Base-Bold;
+    src: url(src/assets/ZingRustD2Demo-Base.otf);    
+}
+
+.titulo{
+    text-align: center;
+    padding-top: 160px;
+    background-color: rgba(209, 240, 218, 0.24);
+    width: 100%;
+    height: 400px;
+    font-family: 'Zing-Rust-Base-Bold', 'sans-serif';
+    font-size: 50px;
+    color: rgb(33, 199, 33);
+    background-image: url('src/assets/fondo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.contenedorTexto{
+    color: rgb(13, 46, 16);
+    background: url('src/assets/leaves.png') top center;
+    padding-top: 30px;
+}
+
+.texto{
+    width: 70%;
+    margin: auto;
+}
+
+.texto h2,h3{
+    margin: 15px 0 0 0;
+    font-weight: bold;
+}
+
+.texto p{
+    font-size: 17px;
+}
+
+.texto div{
+    text-align: center;
+    width: 100%;
+}
+
+.texto img{
+    border-radius: 50px;
+    width: 80%;
+}

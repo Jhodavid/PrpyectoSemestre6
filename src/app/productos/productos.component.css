@@ -1,0 +1,92 @@
+@font-face {
+    font-family: Zing-Rust-Base-Bold;
+    src: url(src/assets/ZingRustD2Demo-Base.otf);    
+}
+
+.tituloProductos{
+    height: auto;
+    text-align: center;
+    color: rgb(18, 110, 41);
+}
+
+.T1{
+    padding-top: 50px;
+    font-size: 50px;
+    font-family: 'Zing-Rust-Base-Bold';
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.T2{
+    font-size: 35px;
+    font-family: 'Zing-Rust-Base-Bold';
+    padding-left: 80px;
+}
+
+.T1Phone{
+    padding-top: 10px;
+    font-size: 30px;
+    font-family: 'Zing-Rust-Base-Bold';
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.T2Phone{
+    font-size: 20px;
+    font-family: 'Zing-Rust-Base-Bold';
+    padding-left: 80px;
+}
+
+mat-grid-list{
+    margin-top: 12px;
+    background-image: url('src/assets/leaves.png');
+}
+
+mat-card{
+   margin: 0 10px 0 10px;
+   background-color: #a0bb95;
+   background-image: url('src/assets/tree-ga1c439c9a_1280.png');
+   /* background-image: url('src/assets/leaves.png'); */
+}
+
+mat-card-title{
+    text-align: center;
+    border-bottom: 1px grey solid;
+    padding-bottom: 5px;
+}
+
+.mat-card-image{
+ width: 70%;
+}
+
+mat-card-content{
+    height: 30%;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.img{
+    text-align: center;
+    margin-top: 15px;
+    padding: 0;
+}
+
+img{
+    margin: 0;
+}
+
+mat-card-actions{
+    text-align: right;
+    padding: 0;
+    margin-top: 5px;
+}
+
+.mat-flat-button{
+    margin: 5px;
+    background-color: rgba(0, 128, 0, 0.623);
+}
+
+.mat-flat-button:hover{
+    color: rgba(0, 128, 0, 0.911);
+    background-color: rgb(232, 247, 239);
+}

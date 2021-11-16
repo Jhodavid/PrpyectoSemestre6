@@ -1,0 +1,22 @@
+.carrusel{
+    width: 100%;
+    margin: 0;
+    padding: 0 2.5%;
+    text-align: center;
+    background-image: url('src/assets/leaves.png');
+    /* background-image: url('./assets/leaves.png'); */
+    background-repeat: repeat;
+}
+
+.carousel-inner{
+    margin: 0 5%;
+    padding: 0;
+    padding: .5% 2%;
+    width: 90%;
+    overflow: hidden;
+}
+
+img{
+    border-radius: 10px;
+    object-fit: contain;
+}

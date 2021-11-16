@@ -1,0 +1,32 @@
+
+.contenedor{
+    height: auto;
+    width: 330px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.cerrar{
+    display: flex;
+    float: right;
+    margin-bottom: 10px;
+}
+
+.img{
+    padding-top: 15px 0;
+    margin-bottom: 15px;
+    width: 80%;
+    text-align: center;
+}
+
+img{
+    width: 95%;
+}
+
+.texto{
+    max-width: 85%;
+}
+
+mat-dialog-container{
+    overflow-y: auto;
+}
